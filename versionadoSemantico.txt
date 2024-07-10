@@ -61,11 +61,6 @@ Versión de prelanzamiento.
 	Indica que la versión no es estable y puede no satisfacer los requerimentos de compatibilidad denotada a la versión normal
 	Por ejemplo:   1.0.0-alpha, 1.0.0-x.7.z92 
 	
-
-E
-
-
-	
 	
 Referencias
 Versionado Semántico 2.0.0
