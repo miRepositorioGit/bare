@@ -1,0 +1,73 @@
+versionadoSemantico.txt
+
+
+El versionado semantico 
+	es un mecanismo/herramienta enfocado a la generación de versiones del software.
+	consiste en tres números enteros no negativos de la forma X.Y.Z y cada uno debe incrementarse anscendentemente al 
+	momento de tener un cambio.
+	Una versión de la forma 0.Y.Z es considereada como desrarrollo inicial.
+	Una versión de la forma 1.0.0 es considerada como funcional.
+	donde: 
+	 X es la versión mayor,  consiste en introducir cambios incompatibles con la verisión anterior.
+	 Y es la versión menor,  consiste en la incorporación de cualquier funcionalidad manteniendo la compatibilidad funcional existente
+	 Z es la versión parche, consiste en correcciones de errores y comportamientos incorrectos. 
+	 Cualquier cambio en su versión inmediato superior, las versiones posteriores deben ser reinicalizadas a cero.
+
+Ejemplos.
+Versión parche Z.
+
+	/*retorna produco de enteros 1.1.2*/
+	int multiplica(int a,int b)
+	{
+		return a*b;
+	}
+	/*retorna produco de flotante 1.1.3*/
+	float multiplica (float a, float b)
+	{ 
+		return a*b ;
+	}
+	/*retorna produco de flotante 1.1.4*/
+	float multiplica (float a, float b)
+	{ 
+		if (a==0 || b==0) return 0;
+		return a*b ;
+	}
+
+Versión parche Y.
+
+	/*retorna produco de flotante 1.1.4*/
+	float multiplica (float a, float b)
+	{ 
+		if (a==0 || b==0) return 0;
+		return a*b ;
+	}
+	
+	float Multiplica (float a, float b)
+	{ 
+		return multiplica(float a, float b);
+ 	}
+	
+Versión parche Z. 
+	/*retorna produco de flotante 2.0.0*/
+	float producto (float a, float b)
+	{ 
+		if (a==0 || b==0) return 0;
+		return a*b ;
+	}
+
+
+Versión de prelanzamiento.   
+	Es notada por un guión y un identificador searado por puntos inmediatamente seguida de la versión Z.
+	Indica que la versión no es estable y puede no satisfacer los requerimentos de compatibilidad denotada a la versión normal
+	Por ejemplo:   1.0.0-alpha, 1.0.0-x.7.z92 
+	
+
+E
+
+
+	
+	
+Referencias
+Versionado Semántico 2.0.0
+Disponible en:https://semver.org/lang/es/
+Consultado: 04Julio24
