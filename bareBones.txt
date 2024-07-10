@@ -1,0 +1,37 @@
+bareBones.txt
+
+https://github.com/miRepositorioGit/bare.git
+
+Creación de contenidos
+		echo "# bare" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		
+		git remote add origin https://github.com/miRepositorioGit/bare.git
+		git push -u origin master
+		
+		
+Actualización de contenidos
+		
+		git remote add origin https://github.com/miRepositorioGit/bareBones.git
+		git branch -M master
+		git push -u origin master
+
+
+git remote add origin https://github.com/miRepositorioGit/bareBones.git
+git branch -M master
+git push -u origin master
+
+commit f2026ccea188f88d14b32415c201342badf76695 (HEAD -> master, origin/master)
+Author: Martín Cordero <mi.cuenta.correo.en@gmail.com>
+Date:   Tue Jul 9 14:09:14 2024 -0600
+
+    5*5=25
+
+commit 9aff12e498fb058ec5ee1cba27fa91fe65e266e5
+Author: Martín Cordero <mi.cuenta.correo.en@gmail.com>
+Date:   Tue Jul 9 14:08:10 2024 -0600
+
+    5*5=20? <-es correcto???
+
